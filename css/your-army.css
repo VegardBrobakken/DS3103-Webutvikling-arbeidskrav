@@ -1,0 +1,12 @@
+/* CSS for your-army siden, gjør sånn at grid-systemet er fleksibelt
+    - Valgte å legge til default css her for å vise forståelse for det i tilegg til å 
+    ha brukt bootstrap rammeverk gjennomgående på resten av oppgaven */
+#warriors-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+}
+
+#others-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+}

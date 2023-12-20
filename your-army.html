@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your army</title>
+    <link rel="icon" type="image/x-icon" href="/images/warrior-icon.png">
+    <!-- Henter inn muligheten til å bruke bootstrap ikoner -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/your-army.css">
+    <script type="module" src="scripts/your-army.js"></script>
+</head>
+<body>
+    <div>
+        <header>
+            <nav>
+                <ul class="navbar bg-dark text-light list-unstyled p-3">
+                    <li class="nav-brand fs-3"><i class="bi bi-shield"></i>ArmiesOfZondor</li> <!-- Bootstrap ikon i headeren til siden -->
+                    <li class="nav-item ms-auto"><a class="nav-link" href="./gathering-army.html">Home</a></li>
+                    <li class="nav-item ms-4"><a class="nav-link" href="./getting-resources.html">Get resources</a></li>
+                    <li class="nav-item ms-4"><a class="nav-link" href="./your-army.html">Your army</a></li>
+                </ul>
+            </nav>
+            <!-- Seksjon som viser ressursene brukeren har -->
+            <section class="mt-5">
+                <div class="d-flex flex-row w-50 justify-content-between p-3 m-auto border rounded shadow">
+                    <div>
+                        <img class="resource-icon-img" src="images/gold-coin.png" alt="">
+                        <span class="fs-5 text-center" id="gold-amount-display">0</span>      
+                    </div>
+                    <div>
+                        <img class="resource-icon-img" src="images/metal.png" alt="">
+                        <span class="fs-5 text-center" id="metal-amount-display">0</span>      
+                    </div>
+                    <div>
+                        <img class="resource-icon-img" src="images/wood.png" alt="">
+                        <span class="fs-5 text-center" id="wood-amount-display">0</span>                
+                    </div>
+                </div>
+            </section>
+        </header>
+        <main>
+            <div class="container mt-5">
+                <h3 class="text-center">Your army</h3>
+
+                <input id="input-search" type="text">
+                <button id="search-btn">Search</button>
+                <button id="show-all-btn">Show all</button>
+                <div id="search-status"></div>
+                
+                <h4 class="mt-5">Warriors:</h4>
+                <section id="warriors-container" class="row g-3 m-3">
+                    <!-- Container for warriors -->
+                </section>
+                <h4 class="mt-5">Animals og war-machines:</h4>
+                <section id="others-container" class="row g-3 m-3">
+                    <!-- Container for animals og machines -->
+                </section>
+            </div>
+        </main>
+    </div>
+</body>
+</html>

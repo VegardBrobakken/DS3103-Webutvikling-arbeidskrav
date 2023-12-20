@@ -1,0 +1,15 @@
+/*
+    Do you need a dedicated CSS file per HTML page in addition to main.css?
+*/
+
+.collecting-metal:hover {
+    cursor: url(../images/pickaxe-cursor.png), auto;
+}
+
+.collecting-wood:hover {
+    cursor: url(../images/axe-cursor.png), auto;
+}
+
+.resource-icon-img {
+    width: 2rem;
+}
