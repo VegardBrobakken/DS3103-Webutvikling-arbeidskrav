@@ -1,2 +1,2 @@
-# DS3103-Webutvikling Eksamen Høst 2023
+# DS3103-Webutvikling Arbeidskrav Høst 2023
 Karakter: Godkjent
